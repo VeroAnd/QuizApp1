@@ -1,0 +1,154 @@
+/* reseteo*/
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Do Hyeon", sans-serif;
+  background: #289895;
+  color: #0b1a19;
+}
+h1 {
+  text-align: center;
+  font-size: 3em;
+}
+a {
+  text-decoration: none;
+}
+h1:hover {
+  color: rgb(167, 4, 36);
+  animation: h1 1s ease 0s 1 normal forwards;
+  -webkit-animation: h1 1s ease 0s 1 normal forwards;
+}
+@keyframes h1 {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 100%;
+  }
+
+  10% {
+    transform: rotate(2deg);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: rotate(-4deg);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: rotate(4deg);
+  }
+
+  80% {
+    transform: rotate(-2deg);
+  }
+
+  90% {
+    transform: rotate(2deg);
+  }
+}
+/* --------------------*/
+
+.contenedor {
+  width: 100%;
+  max-width: 100%;
+
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.flex-item:nth-child .hijo1 {
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
+.flex-item:nth-child .hijo2 {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+.flex-item:nth-child .hijo3 {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+.flex-item:nth-child .hijo4 {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+.flex-item:nth-child .hijo5 {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+.hijo1,
+.hijo2,
+.hijo3,
+.hijo4,
+.hijo5 {
+  border: 5px double #315b5a;
+  border-radius: 15px;
+  margin: 0.5em;
+  padding: 0.5em;
+  font-size: 1.5em;
+  background: #5aa6a4;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+footer {
+  text-align: right;
+  margin: 2em;
+}
+.veroand {
+  font-family: "Pacifico", cursive;
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    max-width: 100%;
+  }
+  body {
+    max-width: 100%;
+  }
+  .contenedor{
+    display: grid;
+    
+  }
+}
